@@ -1,0 +1,57 @@
+# Liability Trap - Semantic Twins Dataset for RAG Testing
+
+## Overview
+
+This dataset is designed to test the ability of RAG (Retrieval-Augmented Generation) systems to distinguish between legal/compliance clauses that have opposite meanings. The dataset contains 50 pairs of clauses that differ by negations (e.g., "shall" vs "shall not") or subjects (e.g., "Lessee" vs "Lessor") to create "semantic twins" - clauses that may appear similar in embedding space but have completely opposite legal implications.
+
+## Purpose
+
+The main purpose of this dataset is to evaluate semantic compression systems (like the one described in the AQEA research) to ensure they can preserve critical semantic distinctions needed for high-compliance RAG applications in legal and financial domains. Traditional compression methods often destroy the "high-frequency signals" needed to distinguish between clauses with opposite meanings, which can lead to serious liability issues.
+
+## Dataset Structure
+
+The dataset is provided as a JSON file (`liability_trap_dataset.json`) with the following structure:
+
+- `dataset_name`: Name of the dataset
+- `description`: Brief description of the dataset
+- `purpose`: Explanation of the dataset's purpose
+- `test_cases`: Array of 50 test cases, each containing:
+  - `id`: Unique identifier for the test case
+  - `clause_a`: First legal clause
+  - `clause_b`: Second legal clause (opposite meaning to clause_a)
+  - `clause_c`: Third legal clause (different subject/topic)
+  - `semantic_difference`: Type of difference (currently all are "negation")
+- `evaluation_metrics`: Suggested metrics for evaluating performance
+- `ground_truth_available`: Flag indicating ground truth is available
+- `license`: Dataset license
+- `created_date`: Date of creation
+- `version`: Dataset version
+
+## Test Case Examples
+
+Each test case contains three clauses:
+1. **Clause A**: Original clause (e.g., "The Lessee shall be liable for structural repairs.")
+2. **Clause B**: Opposite meaning (e.g., "The Lessee shall not be liable for structural repairs.")
+3. **Clause C**: Different subject/topic (e.g., "The Lessor shall be liable for structural repairs.")
+
+The challenge for RAG systems is to ensure that Clause A is not mapped closer to Clause B (due to token overlap) than to other semantically distinct topics, as this would result in retrieving the opposite legal fact in a RAG context.
+
+## Evaluation Metrics
+
+The dataset suggests the following metrics for evaluation:
+- NDCG@10 (Normalized Discounted Cumulative Gain)
+- Recall@k
+- Cosine similarity between opposing clauses
+- Precision in distinguishing semantic twins
+
+## Use Cases
+
+This dataset is particularly useful for:
+- Testing semantic compression algorithms
+- Evaluating embedding quality for legal/financial RAG systems
+- Benchmarking retrieval accuracy in high-compliance applications
+- Research in preserving semantic nuance during compression
+
+## License
+
+This dataset is released under the MIT License.
