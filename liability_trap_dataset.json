@@ -1,0 +1,367 @@
+{
+  "dataset_name": "Liability Trap - Semantic Twins for RAG Testing",
+  "description": "50 pairs of legal/compliance clauses that differ by negations or subjects to test semantic compression systems",
+  "purpose": "Test if compressed embeddings can distinguish between clauses with opposite meanings",
+  "test_cases": [
+    {
+      "id": 1,
+      "clause_a": "The Lessee shall be liable for structural repairs.",
+      "clause_b": "The Lessee shall not be liable for structural repairs.",
+      "clause_c": "The Lessor shall be liable for structural repairs.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 2,
+      "clause_a": "The Company shall indemnify the Client against all claims.",
+      "clause_b": "The Company shall not indemnify the Client against all claims.",
+      "clause_c": "The Client shall indemnify the Company against all claims.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 3,
+      "clause_a": "Confidential information may be disclosed to third parties.",
+      "clause_b": "Confidential information may not be disclosed to third parties.",
+      "clause_c": "Public information may be disclosed to third parties.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 4,
+      "clause_a": "The Contractor is responsible for all safety measures.",
+      "clause_b": "The Contractor is not responsible for any safety measures.",
+      "clause_c": "The Client is responsible for all safety measures.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 5,
+      "clause_a": "Payment shall be made within 30 days of invoice.",
+      "clause_b": "Payment shall not be made within 30 days of invoice.",
+      "clause_c": "Payment shall be made within 60 days of invoice.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 6,
+      "clause_a": "The Employee must work on weekends.",
+      "clause_b": "The Employee need not work on weekends.",
+      "clause_c": "The Employer must work on weekends.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 7,
+      "clause_a": "Termination requires 90 days written notice.",
+      "clause_b": "Termination does not require 90 days written notice.",
+      "clause_c": "Modification requires 90 days written notice.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 8,
+      "clause_a": "The Vendor guarantees product performance.",
+      "clause_b": "The Vendor does not guarantee product performance.",
+      "clause_c": "The Customer guarantees product performance.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 9,
+      "clause_a": "All warranties are hereby provided.",
+      "clause_b": "All warranties are hereby disclaimed.",
+      "clause_c": "Some warranties are hereby provided.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 10,
+      "clause_a": "The Agreement shall remain in full force.",
+      "clause_b": "The Agreement shall not remain in full force.",
+      "clause_c": "The Amendment shall remain in full force.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 11,
+      "clause_a": "The Purchaser has the right of first refusal.",
+      "clause_b": "The Purchaser does not have the right of first refusal.",
+      "clause_c": "The Seller has the right of first refusal.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 12,
+      "clause_a": "The Board shall approve all expenditures.",
+      "clause_b": "The Board shall not approve all expenditures.",
+      "clause_c": "The Committee shall approve all expenditures.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 13,
+      "clause_a": "The Tenant may sublet the premises.",
+      "clause_b": "The Tenant may not sublet the premises.",
+      "clause_c": "The Landlord may sublet the premises.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 14,
+      "clause_a": "Insurance coverage must be maintained.",
+      "clause_b": "Insurance coverage need not be maintained.",
+      "clause_c": "Bond coverage must be maintained.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 15,
+      "clause_a": "The Service Provider shall ensure data security.",
+      "clause_b": "The Service Provider shall not ensure data security.",
+      "clause_c": "The Client shall ensure data security.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 16,
+      "clause_a": "Audits may be conducted quarterly.",
+      "clause_b": "Audits may not be conducted quarterly.",
+      "clause_c": "Reviews may be conducted quarterly.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 17,
+      "clause_a": "The Licensee has exclusive rights to distribution.",
+      "clause_b": "The Licensee does not have exclusive rights to distribution.",
+      "clause_c": "The Licensor has exclusive rights to distribution.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 18,
+      "clause_a": "The Consultant shall provide monthly reports.",
+      "clause_b": "The Consultant shall not provide monthly reports.",
+      "clause_c": "The Manager shall provide monthly reports.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 19,
+      "clause_a": "The Developer warrants code quality.",
+      "clause_b": "The Developer does not warrant code quality.",
+      "clause_c": "The Tester warrants code quality.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 20,
+      "clause_a": "The Participant is eligible for benefits.",
+      "clause_b": "The Participant is not eligible for benefits.",
+      "clause_c": "The Sponsor is eligible for benefits.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 21,
+      "clause_a": "The Contractor shall obtain all permits.",
+      "clause_b": "The Contractor shall not obtain all permits.",
+      "clause_c": "The Owner shall obtain all permits.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 22,
+      "clause_a": "The Agent has authority to bind the Principal.",
+      "clause_b": "The Agent does not have authority to bind the Principal.",
+      "clause_c": "The Representative has authority to bind the Principal.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 23,
+      "clause_a": "The Subscriber may cancel at any time.",
+      "clause_b": "The Subscriber may not cancel at any time.",
+      "clause_c": "The Provider may cancel at any time.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 24,
+      "clause_a": "The Guarantor shall be liable for debts.",
+      "clause_b": "The Guarantor shall not be liable for debts.",
+      "clause_c": "The Borrower shall be liable for debts.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 25,
+      "clause_a": "The User must comply with all policies.",
+      "clause_b": "The User need not comply with all policies.",
+      "clause_c": "The Administrator must comply with all policies.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 26,
+      "clause_a": "The Contractor is liable for consequential damages.",
+      "clause_b": "The Contractor is not liable for consequential damages.",
+      "clause_c": "The Client is liable for consequential damages.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 27,
+      "clause_a": "The License permits commercial use.",
+      "clause_b": "The License does not permit commercial use.",
+      "clause_c": "The Agreement permits commercial use.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 28,
+      "clause_a": "The Operator shall maintain equipment.",
+      "clause_b": "The Operator shall not maintain equipment.",
+      "clause_c": "The Owner shall maintain equipment.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 29,
+      "clause_a": "The Participant consents to data processing.",
+      "clause_b": "The Participant does not consent to data processing.",
+      "clause_c": "The Controller consents to data processing.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 30,
+      "clause_a": "The Contractor must meet all specifications.",
+      "clause_b": "The Contractor need not meet all specifications.",
+      "clause_c": "The Client must meet all specifications.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 31,
+      "clause_a": "The Employee is entitled to overtime pay.",
+      "clause_b": "The Employee is not entitled to overtime pay.",
+      "clause_c": "The Contractor is entitled to overtime pay.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 32,
+      "clause_a": "The Vendor shall provide training services.",
+      "clause_b": "The Vendor shall not provide training services.",
+      "clause_c": "The Customer shall provide training services.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 33,
+      "clause_a": "The Member has voting rights in all matters.",
+      "clause_b": "The Member does not have voting rights in all matters.",
+      "clause_c": "The Director has voting rights in all matters.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 34,
+      "clause_a": "The Publisher owns all derivative works.",
+      "clause_b": "The Publisher does not own all derivative works.",
+      "clause_c": "The Author owns all derivative works.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 35,
+      "clause_a": "The Franchisee may operate multiple locations.",
+      "clause_b": "The Franchisee may not operate multiple locations.",
+      "clause_c": "The Franchisor may operate multiple locations.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 36,
+      "clause_a": "The Contractor shall indemnify against all losses.",
+      "clause_b": "The Contractor shall not indemnify against all losses.",
+      "clause_c": "The Client shall indemnify against all losses.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 37,
+      "clause_a": "The User may access the system 24/7.",
+      "clause_b": "The User may not access the system 24/7.",
+      "clause_c": "The Administrator may access the system 24/7.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 38,
+      "clause_a": "The Licensee may sublicense the technology.",
+      "clause_b": "The Licensee may not sublicense the technology.",
+      "clause_c": "The Licensor may sublicense the technology.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 39,
+      "clause_a": "The Participant is bound by non-disclosure.",
+      "clause_b": "The Participant is not bound by non-disclosure.",
+      "clause_c": "The Organizer is bound by non-disclosure.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 40,
+      "clause_a": "The Contractor must follow safety protocols.",
+      "clause_b": "The Contractor need not follow safety protocols.",
+      "clause_c": "The Supervisor must follow safety protocols.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 41,
+      "clause_a": "The Subscriber has unlimited data access.",
+      "clause_b": "The Subscriber does not have unlimited data access.",
+      "clause_c": "The Administrator has unlimited data access.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 42,
+      "clause_a": "The Agent may make decisions on behalf of the Principal.",
+      "clause_b": "The Agent may not make decisions on behalf of the Principal.",
+      "clause_c": "The Representative may make decisions on behalf of the Principal.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 43,
+      "clause_a": "The Developer owns all intellectual property.",
+      "clause_b": "The Developer does not own all intellectual property.",
+      "clause_c": "The Client owns all intellectual property.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 44,
+      "clause_a": "The Tenant is responsible for utilities.",
+      "clause_b": "The Tenant is not responsible for utilities.",
+      "clause_c": "The Landlord is responsible for utilities.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 45,
+      "clause_a": "The Contractor shall provide all materials.",
+      "clause_b": "The Contractor shall not provide all materials.",
+      "clause_c": "The Owner shall provide all materials.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 46,
+      "clause_a": "The User consents to electronic communications.",
+      "clause_b": "The User does not consent to electronic communications.",
+      "clause_c": "The Provider consents to electronic communications.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 47,
+      "clause_a": "The Participant is eligible for profit sharing.",
+      "clause_b": "The Participant is not eligible for profit sharing.",
+      "clause_c": "The Manager is eligible for profit sharing.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 48,
+      "clause_a": "The Service Provider warrants system uptime.",
+      "clause_b": "The Service Provider does not warrant system uptime.",
+      "clause_c": "The Client warrants system uptime.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 49,
+      "clause_a": "The Licensee may modify the software.",
+      "clause_b": "The Licensee may not modify the software.",
+      "clause_c": "The Licensor may modify the software.",
+      "semantic_difference": "negation"
+    },
+    {
+      "id": 50,
+      "clause_a": "The Contractor is liable for data breaches.",
+      "clause_b": "The Contractor is not liable for data breaches.",
+      "clause_c": "The Client is liable for data breaches.",
+      "semantic_difference": "negation"
+    }
+  ],
+  "evaluation_metrics": [
+    "NDCG@10",
+    "Recall@k",
+    "Cosine similarity between opposing clauses",
+    "Precision in distinguishing semantic twins"
+  ],
+  "ground_truth_available": true,
+  "license": "MIT",
+  "created_date": "2026-01-06",
+  "version": "1.0"
+}
